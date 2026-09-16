@@ -51,10 +51,11 @@ forced-hosts = {}
 [servers]
         # Configure your servers here. Each key represents the server's name, and the value
         # represents the IP address of the server to connect to.
-        lobby = "mc:25565"
+        vanilla = "mc-vanilla:25565"
+        modded = "mc-modded:25565"
         limbo = "limbo:25565"
         # In what order we should try servers when a player logs in or is kicked from a server.
-        try = ["lobby", "limbo"]
+        try = ["modded", "vanilla", "limbo"]
 
 # Configure your forced hosts here.
 [advanced]
